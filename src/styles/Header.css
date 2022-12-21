@@ -1,0 +1,149 @@
+/* main navigaction styles */
+
+header{
+   width: 100%;
+   padding: 10px 0;
+
+}
+header .navbar{
+   width: 90%;
+   margin: 0  auto;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   z-index: 999;
+
+}
+.navbar .title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .title h1{
+   text-transform: capitalize;
+   color: #3fd5c4;
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.language{
+ background-color: #3fd5c4;
+ border-radius: 5px;
+ padding: 5px;
+}
+.containerLang{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer;
+}
+.containerLang p{
+  color: #0e2431;
+}
+
+.language  .icons{
+   color: #0e2431;
+   font-size: 25px;
+   cursor: pointer;
+}
+
+.navbar nav{
+   display: flex;
+   align-items: center;
+}
+.navbar ul{
+   display: flex;
+   list-style: none;
+}
+.navbar ul li a{
+   font-size: 14px;
+   font-weight: 600;
+   color: #e4eae9;
+   padding: 8px;
+   transition: 0.3s ease;
+   text-decoration: none;
+}
+.navbar ul li span{
+   color: #3fd5c4;
+}
+.navbar ul li{
+   cursor: pointer;
+   margin: 0 8px;
+}
+.navbar ul li a:hover{
+   background-color:#e4eae9;
+   color: #0e2431;
+   border-radius: 3px;
+}
+
+.menu, .closer{
+   display: none;
+}
+.menu .menu__buton{
+   font-size: 30px;
+   font-weight: bold;
+   color: #3fd5c4;
+   margin-right: 10px;
+}
+nav ul .close__button{
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   font-size: 23px;
+   color: #f5f5f5;
+   font-weight: bold;
+}
+.header__sticky{
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 999;
+   box-shadow: 5px 5px 5px -5px #f5f5f5;
+   background-color: #0e2431;
+
+}
+
+
+
+@media only screen and (max-width: 768px){
+   .navbar ul{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      max-width: 400px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #25333c;
+      padding-top: 60px;
+      padding-left: 60px;
+      display: none;
+   }
+   .navbar ul.toggle__nav__add{
+      display: block;
+   }
+   .navbar ul li{
+      color: #f5f5f5;
+      font-size: 20px;
+      margin-top: 10px;
+
+   }
+   .navbar ul li:hover{
+      background-color: #f5f5f5;
+      color: #0e2431;
+      border-radius: 3px;
+   }
+   .navbar .media__icons .icons{
+     display: none;
+   }
+   .menu, .closer{
+      display: block;
+   }
+    /* .language{
+      margin-left: 20px;
+    } */
+
+   
+}
+
